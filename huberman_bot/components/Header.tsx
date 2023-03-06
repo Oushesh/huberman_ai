@@ -1,10 +1,30 @@
 import React from 'react'
 import {SearchIcon,BellIcon} from '@heroicons/react/solid'
 import Link from 'next/link'
+import {useEffect,useState} from 'react'
 
 function Header() {
+    //Handles state of header.
+    const [isScrolled, setIsScrolled] = useState(false)
+
+    useEffect(() => {
+      const handleScroll = () => { 
+        if (window.scrollY > 0) {
+          setIsScrolled(true)
+        } else {
+          setIsScrolled(false)
+        }
+      }
+  
+      window.addEventListener('scroll', handleScroll)
+  
+      return () => {
+        window.removeEventListener('scroll', handleScroll)
+      }
+    }, [])
+    //empty array means it will only run once otherwise it will run every time the page is rendered. 
   return (
-    <header>
+    <header className={`${isScrolled && 'bg-[#141414]'}`}>
     <div className="flex items-center space-x-2 md:spacing-x-10">
        <img
         src="https://rb.gy/ulxxee"
@@ -21,7 +41,7 @@ function Header() {
         <li className="headerLink">My List </li>    
         </u1>
     </div>
-    <div>
+    <div className='flex items-center space-x-4 text-sm font-light'>
         <SearchIcon className="hidden h-6 w-6 sm:inline"/>
         <p className="hidden lg_inline">Search</p>
         <BellIcon className="h-6 w-6"/>
@@ -37,7 +57,7 @@ function Header() {
   )
 }
 
-export default Header
+export default Header;
 
 //Header has 2 sides left and right. Lefr for image and right for text.
 //Header is a component.

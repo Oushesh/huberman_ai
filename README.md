@@ -10,3 +10,6 @@ allows you to browse the videos of andrew huberman and ask questions and so much
 ## Firebase: Authentication. (later superbase)
 
 ## install rfce in visual studio for easy react component code snippet
+
+
+## Header has a state and vanishes.

@@ -14,7 +14,7 @@ interface Inputs {
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justiy-center py-2">
+    <div className="relative h-screen bg-gradient-to-b  flex min-h-screen flex-col items-center justiy-center py-2">
        <Head>
         <title>
           Huberman Bot
