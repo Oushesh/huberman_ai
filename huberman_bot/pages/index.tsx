@@ -5,7 +5,6 @@ import { useForm, SubmitHandler } from 'react-hook-form'
 import Header from '../components/Header'
 import useAuth from '../hooks/useAuth'
 
-
 //interface has the advantage of being able to be reused in other places
 interface Inputs {
   email: string
