@@ -38,3 +38,7 @@ Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&ut
    React icons: 
    https://react-icons.github.io/react-icons/
    npm install react-icons --save
+
+## Replace the TMDB icons with the videos given.
+
+## 
