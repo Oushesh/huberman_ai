@@ -30,3 +30,11 @@ Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&ut
 ## Beautiful Forms are made from here: 
    react-form-hooks
    https://react-hook-form.com/
+
+## For icons: Heoricons and React icons the one I use.
+   https://heroicons.com/
+   npm install @heroicons/react
+
+   React icons: 
+   https://react-icons.github.io/react-icons/
+   npm install react-icons --save

@@ -23,10 +23,8 @@ const Home: NextPage = () => {
       </Head>
 
       <Header/>
-      Building Netflix
-
+   
       <main>
-        /* This is where all happens*/
         {/*Banner*/}
         <section>
         {/*Rows*/}
