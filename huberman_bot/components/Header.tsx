@@ -1,4 +1,6 @@
 import React from 'react'
+import {SearchIcon,BellIcon} from '@heroicons/react/solid'
+import Link from 'next/link'
 
 function Header() {
   return (
@@ -20,6 +22,16 @@ function Header() {
         </u1>
     </div>
     <div>
+        <SearchIcon className="hidden h-6 w-6 sm:inline"/>
+        <p className="hidden lg_inline">Search</p>
+        <BellIcon className="h-6 w-6"/>
+        <Link href="/account">
+        <img
+            src="https://rb.gy/g1pwyx"
+            alt=""
+            className="cursor-pointer rounded"
+          />
+        </Link>
     </div>
     </header>
   )
@@ -28,3 +40,4 @@ function Header() {
 export default Header
 
 //Header has 2 sides left and right. Lefr for image and right for text.
+//Header is a component.

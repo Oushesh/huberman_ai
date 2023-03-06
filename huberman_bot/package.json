@@ -6,13 +6,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.6",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-hook-form": "^7.43.2"
+    "react-icons": "^4.8.0"
   },
   "devDependencies": {
-    "@react-hook-form": "7.43.2",
     "@types/node": "18.11.3",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
