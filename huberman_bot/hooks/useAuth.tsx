@@ -20,7 +20,7 @@ import {
   }
   
   const AuthContext = createContext<IAuth>({
-    user: null,
+    user: null, 
     signUp: async () => {},
     signIn: async () => {},
     logout: async () => {},
