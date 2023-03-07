@@ -12,15 +12,7 @@ interface Props {
     documentaries: Movie[],
 }
 
-function Banner(
-    {netflixOriginals, 
-        trendingNow, 
-        topRated, 
-        actionMovies, 
-        comedyMovies, 
-        horrorMovies, 
-        romanceMovies, 
-        documentaries}:Props}) {
+function Banner({ netflixOriginals }: Props) {
   return(
     <div>
         <div{/*<Image/>*/}</div>     
@@ -28,3 +20,4 @@ function Banner(
   ) 
 }
 export default Banner
+
