@@ -7,6 +7,9 @@ import { FaPlay } from 'react-icons/fa'
 //import { useRecoilState } from 'recoil'
 import Image from 'next/image'
 
+
+//interface has the advantage of being able to be reused in other places
+
 interface Props {
   netflixOriginals: Movie[]
 }
@@ -29,34 +32,33 @@ function Banner({ netflixOriginals }: Props) {
         <Image
           layout="fill"
           objectFit='cover'
-          src={`${baseUrl}${movie?.backdrop_path || movie?.poster_path}`}
+          src="https://www.themoviedb.org/t/p/original/pev79DpUojF5qaWwedoEa2LT31i.jpg"
         />
       </div>
 
       <h1 className="text-2xl font-bold md:text-4xl lg:text-7xl">
         {movie?.title || movie?.name || movie?.original_name}
+        Batman Returns
       </h1>
-      <p className="max-w-xs text-xs text-shadow-md md:max-w-lg md:text-lg lg:max-w-2xl lg:text-2xl">
-        {movie?.overview}
+      <p className="max-w-xs text-xs md:max-w-lg md:text-lg lg:max-w-2xl lg:text-2xl">
+        Hey Batman, how is it going 
       </p>
-      <div className="flex space-x-3">
-        <button className="bannerButton bg-white text-black">
-          <FaPlay className="h-4 w-4 text-black md:h-7 md:w-7" />
-          Play
-        </button>
 
-        <button
-          className="bannerButton bg-[gray]/70"
-          onClick={() => {
-            setCurrentMovie(movie)
-            setShowModal(true)
-          }}
-        >
-          <InformationCircleIcon className="h-5 w-5 md:h-8 md:w-8" /> More Info
+      <div className="flex space-x-3 justify-left">
+        <button className="bannerButton bg-white text-black"><FaPlay className="h-4 w-4 text-black md:h.7 md:w-7"/> Play </button>
+        <button className="bannerButton bg-[gray]/70"> 
+        More Info <InformationCircleIcon className="h-5 w-5 md:h-8 md:w-8"/>
         </button>
-      </div>
+      </div>   
+
     </div>
   )
 }
 
 export default Banner
+
+//you can write custom css and add it under
+//className in Tailwind css
+//icons from herokicons, react-icons.
+//Custom tech shadow I use test-shadow npm:
+//npm i tailwindcss-textshadow
