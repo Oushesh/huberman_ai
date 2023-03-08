@@ -1,14 +1,20 @@
+/*
 import {
     createUserWithEmailAndPassword,
     onAuthStateChanged,
     signInWithEmailAndPassword,
     signOut,
     User,
+    auth
   } from 'firebase/auth'
   
+  */
+
+
+/*
   import { useRouter } from 'next/router'
   import { createContext, useContext, useEffect, useMemo, useState } from 'react'
-  import { auth } from '../firebase'
+
   
   interface IAuth {
     user: User | null
@@ -18,6 +24,7 @@ import {
     error: string | null
     loading: boolean
   }
+  
   
   const AuthContext = createContext<IAuth>({
     user: null, 
@@ -111,3 +118,4 @@ import {
   export default function useAuth() {
     return useContext(AuthContext)
   }
+  */

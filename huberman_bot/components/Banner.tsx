@@ -7,7 +7,6 @@ import { FaPlay } from 'react-icons/fa'
 //import { useRecoilState } from 'recoil'
 import Image from 'next/image'
 
-
 //interface has the advantage of being able to be reused in other places
 
 interface Props {
@@ -33,6 +32,7 @@ function Banner({ netflixOriginals }: Props) {
           layout="fill"
           objectFit='cover'
           src="https://www.themoviedb.org/t/p/original/pev79DpUojF5qaWwedoEa2LT31i.jpg"
+          alt=""
         />
       </div>
 
@@ -40,7 +40,7 @@ function Banner({ netflixOriginals }: Props) {
         {movie?.title || movie?.name || movie?.original_name}
         Batman Returns
       </h1>
-      <p className="max-w-xs text-xs md:max-w-lg md:text-lg lg:max-w-2xl lg:text-2xl">
+      <p className="max-w-xs text-shadow-md text-xs md:max-w-lg md:text-lg lg:max-w-2xl lg:text-2xl">
         Hey Batman, how is it going 
       </p>
 

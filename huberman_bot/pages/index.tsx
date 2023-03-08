@@ -5,7 +5,8 @@ import { useForm, SubmitHandler } from 'react-hook-form'
 import Header from '../components/Header'
 import useAuth from '../hooks/useAuth'
 import Banner from '../components/Banner';
-import requests from '../utils/requests'
+import requests from '../utils/requests';
+import Row from '../components/Row';
 //interface has the advantage of being able to be reused in other places
 
 interface Props {
@@ -41,15 +42,17 @@ const Home = ({
       </Head>
 
       <Header/>
-   
-      <main>
+      <main className="relative pl-4 pb-4 lg:space-y-24 lg:pl-16">
         <Banner/>
         {/*Banner*/}
         <section>
-        {/*Rows*/}
-        {/*Rows*/}
-        {/*Rows*/}
-        {/*Rows*/}
+          <Row title="Trending Youtuber" movies={trendingNow} />
+          <Row title="Top Rated Videos" movies={topRated} />
+          <Row title="Action Thrillers" movies={actionMovies}/>
+          <Row title="Comedies" movies={comedyMovies}/>
+          <Row title="ScaryMovies" movies={horrorMovies}/>
+          <Row title="Romance Movies" movies={romanceMovies}/>
+          <Row title="Documentaries" movies={documentaries}/>
         </section>
       </main>
       {/*model*/}
