@@ -7,6 +7,8 @@ import useAuth from '../hooks/useAuth'
 import Banner from '../components/Banner';
 import requests from '../utils/requests';
 import Row from '../components/Row';
+import { SearchCircleIcon, SearchIcon } from '@heroicons/react/solid'
+import Link  from 'next/link'
 //interface has the advantage of being able to be reused in other places
 
 interface Props {
@@ -54,8 +56,19 @@ const Home = ({
           <Row title="Romance Movies" movies={romanceMovies}/>
           <Row title="Documentaries" movies={documentaries}/>
         </section>
+
+        <section className="flex space-x-2 justify-left">
+        <div className='flex items-center space-x-4 text-sm font-light'>
+          <h3/>
+            Results
+          <SearchIcon className="hidden h-6 w-6 sm:inline"/>
+          <p className="hidden lg_inline">Search</p>
+          <SearchIcon className="h-6 w-6"/>
+          <p> This project will be adapted for users or subscribers of a given youtuber to search through videos where a particular information was said</p>
+          <p> Oushesh Haradhun CopyRights Reserved 2023 </p>
+          </div>
+        </section>
       </main>
-      {/*model*/}
     </div>
   )
 }
@@ -98,3 +111,10 @@ export const getServerSideProps = async () => {
     }
   }
 }
+
+//Youtube Videos
+
+
+
+
+
