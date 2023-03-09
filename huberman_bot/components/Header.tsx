@@ -59,8 +59,7 @@ function Header() {
     </header>
   )
 }
-
 export default Header;
 
-//Header has 2 sides left and right. Lefr for image and right for text.
+//Header has 2 sides left and right. Left for image and right for text.
 //Header is a component.
